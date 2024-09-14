@@ -15,10 +15,12 @@ void main() {
         ),
         title: const Text(
           'Лабовский Максим Алексеевич',
+          
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w600,
             fontSize: 24,
+            
           ),
         ),
         backgroundColor: Colors.blue,
@@ -40,12 +42,17 @@ void main() {
                   alignment: Alignment.center,
                 ),
               ),
-              const Padding(
+              const Flexible(
+                child:Padding( 
                 padding: EdgeInsets.all(20),
+                
                 child: const Text(
                   'В этом универе я учусь',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
+                  style: TextStyle(
+                    //fontSize: 24, 
+                    fontWeight: FontWeight.w900),
                   softWrap: true,
+                ),
                 ),
               ),
             ],
@@ -63,12 +70,17 @@ void main() {
                   alignment: Alignment.center,
                 ),
               ),
-              const Padding(
+              const Flexible(
+                child:Padding(
                 padding: EdgeInsets.all(20),
                 child: Text(
                   'А это лого моего факультета (ФДО)',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
+                  softWrap: true,
+                  style: TextStyle(
+                    //fontSize: 24, 
+                    fontWeight: FontWeight.w900),
                 ),
+              ),
               ),
             ],
           ),
@@ -89,7 +101,11 @@ void main() {
                 padding: EdgeInsets.all(20),
                 child: Text(
                   'А это человек, который скорее всего все это проверяет...\n<- Он Кстати преподователь в ТУСУР',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
+                  style: TextStyle(
+                    //fontSize: 24, 
+                    fontWeight: FontWeight.w900,
+                    color: Colors.greenAccent,
+                    ),
                   softWrap: true,
                 ),
               ))
